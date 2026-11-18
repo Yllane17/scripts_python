@@ -42,9 +42,8 @@ print(f"Le nombre de semaine qu'il faut est de : {semaine} semaines")
 notes_examen = [12,15,16,17]
 notes_cc = [17,15,12,116]
 
-for note_ex in notes_examen :
-    for note_c in notes_cc :
-        if note_ex > note_c :
-            print("Il y'a PROGRESSION")
-        else :
-            print("Il n y'a PAS DE PROGRESSION")
+for i in range(len(notes_examen)):
+    if notes_examen[i] > notes_cc[i]:
+        print("PROGRESSION")
+    else:
+        print("PAS DE PROGRESSION")
